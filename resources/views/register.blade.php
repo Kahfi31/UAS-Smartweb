@@ -182,6 +182,24 @@
         .login-text a:hover {
             text-decoration: underline;
         }
+        @media (max-width: 900px) {
+            .container { flex-direction: column; height: auto; }
+            .left-side, .right-side { width: 100%; height: 300px; }
+            .overlay { width: 80%; height: 300px; padding: 1rem; }
+            .overlay h1, .overlay h2 { font-size: 2.5rem; }
+            .overlay p { font-size: 1.2rem; }
+            .right-side { padding: 1rem; }
+            .input-field, .form-group, .register-btn { max-width: 90vw; width: 100%; margin-left: 0; }
+        }
+        @media (max-width: 600px) {
+            .container { flex-direction: column; height: auto; }
+            .left-side, .right-side { width: 100%; height: 180px; }
+            .overlay { width: 95%; height: 180px; padding: 0.5rem; }
+            .overlay h1, .overlay h2 { font-size: 1.2rem; }
+            .overlay p { font-size: 0.8rem; }
+            .right-side { padding: 0.5rem; }
+            .input-field, .form-group, .register-btn { max-width: 98vw; width: 100%; font-size: 0.95rem; margin-left: 0; }
+        }
     </style>
 </head>
 <body>

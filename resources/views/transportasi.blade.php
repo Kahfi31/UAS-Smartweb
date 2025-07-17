@@ -957,3 +957,30 @@
         }
     }
     </script>
+
+    /* Tambahan Media Queries Responsif */
+    @media (max-width: 1024px) {
+        .navbar-links { gap: 40px; margin-left: 40px; }
+        .main-bg { padding-top: 60px; }
+        .hero-split-bg { width: 98vw; }
+    }
+    @media (max-width: 768px) {
+        .navbar { flex-direction: column; align-items: flex-start; padding: 8px 4px; }
+        .navbar-links { flex-direction: column; gap: 12px; margin-left: 0; width: 100%; }
+        .navbar-links a { font-size: 16px; margin-top: 0; padding: 6px 0; }
+        .navbar-user { margin-top: 8px; margin-right: 0; }
+        .main-bg { padding-top: 20px; }
+        .hero-split-bg { flex-direction: column; width: 100vw; min-height: 300px; }
+        .hero-left-bg, .hero-right-bg { height: 200px; border-radius: 0; }
+        .hero-card { padding: 2rem 0.5rem; }
+    }
+    @media (max-width: 480px) {
+        .navbar { padding: 4px 2px; }
+        .navbar-links { gap: 6px; margin-left: 0; width: 100%; }
+        .navbar-links a { font-size: 14px; padding: 4px 0; }
+        .navbar-user { margin-top: 4px; margin-right: 0; }
+        .main-bg { padding-top: 4px; }
+        .hero-split-bg { flex-direction: column; width: 100vw; min-height: 120px; }
+        .hero-left-bg, .hero-right-bg { height: 80px; border-radius: 0; }
+        .hero-card { padding: 0.5rem 0.2rem; font-size: 0.95rem; }
+    }

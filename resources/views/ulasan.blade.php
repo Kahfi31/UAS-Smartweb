@@ -332,51 +332,29 @@
         }
 
         /* Responsive Design */
-        @media (max-width: 768px) {
-            .header h1 {
-                font-size: 2.5rem;
-            }
-
-            .header p {
-                font-size: 1rem;
-            }
-
-            .filter-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .places-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .back-btn {
-                top: 20px;
-                left: 20px;
-                padding: 10px 16px;
-                font-size: 0.9rem;
-            }
+        @media (max-width: 1024px) {
+            .container { padding: 10px; }
+            .header h1 { font-size: 2.2rem; }
         }
-
+        @media (max-width: 768px) {
+            .container { padding: 4px; }
+            .header { padding: 24px 4px 16px; }
+            .header h1 { font-size: 1.2rem; }
+            .header p { font-size: 0.9rem; }
+            .filter-section { padding: 10px; }
+            .filter-grid { gap: 8px; }
+            .places-grid { gap: 8px; }
+            .place-card { padding: 8px; }
+        }
         @media (max-width: 480px) {
-            .container {
-                padding: 15px;
-            }
-
-            .header {
-                padding: 40px 15px 30px;
-            }
-
-            .header h1 {
-                font-size: 2rem;
-            }
-
-            .filter-section {
-                padding: 20px;
-            }
-
-            .place-content {
-                padding: 20px;
-            }
+            .container { padding: 2px; }
+            .header { padding: 8px 2px 4px; }
+            .header h1 { font-size: 0.9rem; }
+            .header p { font-size: 0.7rem; }
+            .filter-section { padding: 4px; }
+            .filter-grid { gap: 4px; }
+            .places-grid { gap: 4px; grid-template-columns: 1fr; }
+            .place-card { padding: 4px; }
         }
     </style>
 </head>

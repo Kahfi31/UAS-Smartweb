@@ -463,6 +463,170 @@
       background: #fff;
       color: #a259ff;
     }
+
+    /* RESPONSIVE DESIGN */
+    @media (max-width: 1024px) {
+      .navbar-links {
+        gap: 40px;
+        margin-left: 40px;
+      }
+      .rekomendasi-hero-title {
+        font-size: 36px;
+      }
+      .rekomendasi-chatbox {
+        max-width: 98vw;
+        padding: 18px 8px 12px 8px;
+      }
+      .recommendation-list, .ai-box {
+        max-width: 98vw;
+        padding: 18px 8px;
+      }
+      .card-grid {
+        gap: 12px;
+      }
+    }
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 4px;
+      }
+      .navbar-links {
+        flex-direction: column;
+        gap: 12px;
+        margin-left: 0;
+        width: 100%;
+      }
+      .navbar-links a {
+        font-size: 16px;
+        margin-top: 0;
+        padding: 6px 0;
+      }
+      .navbar-user {
+        margin-top: 8px;
+        margin-right: 0;
+      }
+      .rekomendasi-hero {
+        margin-top: 80px;
+        padding: 32px 8px 16px;
+      }
+      .rekomendasi-hero-title {
+        font-size: 24px;
+      }
+      .rekomendasi-hero-subtitle {
+        font-size: 15px;
+      }
+      .rekomendasi-chatbox {
+        padding: 10px 2px 8px 2px;
+      }
+      .recommendation-list, .ai-box {
+        padding: 10px 2px;
+      }
+      .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+      }
+      .card img {
+        height: 120px;
+      }
+      .rekomendasi-suggestions {
+        gap: 8px;
+      }
+      .rekomendasi-suggestion-btn {
+        padding: 8px 10px;
+        font-size: 13px;
+      }
+      .fab-send-inside {
+        width: 36px;
+        height: 36px;
+        font-size: 18px;
+        right: 8px;
+        bottom: 18px;
+      }
+      .textarea-wrapper textarea {
+        height: 90px;
+        font-size: 15px;
+        padding: 10px 12px;
+      }
+    }
+    @media (max-width: 480px) {
+      .navbar {
+        position: static;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 4px 2px;
+      }
+      .navbar-links {
+        flex-direction: column;
+        gap: 6px;
+        margin-left: 0;
+        width: 100%;
+      }
+      .navbar-links a {
+        font-size: 14px;
+        padding: 4px 0;
+      }
+      .navbar-user {
+        margin-top: 4px;
+        margin-right: 0;
+      }
+      .rekomendasi-hero {
+        margin-top: 40px;
+        padding: 16px 2px 8px;
+      }
+      .rekomendasi-hero-title {
+        font-size: 16px;
+        margin-bottom: 12px;
+      }
+      .rekomendasi-hero-subtitle {
+        font-size: 12px;
+        margin-bottom: 12px;
+      }
+      .rekomendasi-chatbox {
+        padding: 4px 0 4px 0;
+        max-width: 100vw;
+      }
+      .recommendation-list, .ai-box {
+        padding: 4px 0;
+        max-width: 100vw;
+      }
+      .card-grid {
+        grid-template-columns: 1fr;
+        gap: 6px;
+      }
+      .card img {
+        height: 80px;
+      }
+      .rekomendasi-suggestions {
+        gap: 4px;
+      }
+      .rekomendasi-suggestion-btn {
+        padding: 6px 6px;
+        font-size: 11px;
+      }
+      .fab-send-inside {
+        width: 28px;
+        height: 28px;
+        font-size: 14px;
+        right: 4px;
+        bottom: 8px;
+      }
+      .textarea-wrapper textarea {
+        height: 60px;
+        font-size: 12px;
+        padding: 6px 8px;
+      }
+      .recommendation-item {
+        padding: 8px;
+        font-size: 13px;
+      }
+      .card-text h3 {
+        font-size: 13px;
+      }
+      .card-text p {
+        font-size: 11px;
+      }
+    }
   </style>
 </head>
 <body>

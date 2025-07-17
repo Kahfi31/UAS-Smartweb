@@ -403,6 +403,21 @@
                 justify-content: center;
             }
         }
+        @media (max-width: 1024px) {
+  .container, .main-content { padding: 1rem; }
+}
+@media (max-width: 768px) {
+  .container, .main-content { padding: 0.5rem; }
+  .card, .wisata-card, .detail-section { flex-direction: column; max-width: 100vw; }
+  img, .wisata-img { max-width: 100%; height: auto; }
+  .btn, button { font-size: 0.95rem; padding: 0.5rem 1rem; }
+}
+@media (max-width: 480px) {
+  .container, .main-content { padding: 0.2rem; }
+  .card, .wisata-card, .detail-section { flex-direction: column; max-width: 100vw; }
+  img, .wisata-img { max-width: 100%; height: auto; }
+  .btn, button { font-size: 0.9rem; padding: 0.4rem 0.7rem; }
+}
     </style>
 </head>
 <body>

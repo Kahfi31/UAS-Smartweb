@@ -79,6 +79,30 @@
             .hero-content h1 { font-size: 36px; }
             .hero-content p { font-size: 15px; }
         }
+        @media (max-width: 768px) {
+            .navbar { flex-direction: column; align-items: flex-start; padding: 8px 4px; }
+            .navbar-links { flex-direction: column; gap: 12px; margin-left: 0; width: 100%; }
+            .navbar-links a { font-size: 16px; margin-top: 0; padding: 6px 0; }
+            .navbar-user { margin-top: 8px; margin-right: 0; }
+            .hero { padding: 24px 4px; height: auto; }
+            .hero-content { margin-left: 0; max-width: 100vw; }
+            .hero-content h1 { font-size: 24px; }
+            .hero-content p { font-size: 13px; }
+            .section { padding: 24px 4px 0 4px; }
+            .cards { gap: 10px; }
+        }
+        @media (max-width: 480px) {
+            .navbar { padding: 4px 2px; }
+            .navbar-links { gap: 6px; margin-left: 0; width: 100%; }
+            .navbar-links a { font-size: 14px; padding: 4px 0; }
+            .navbar-user { margin-top: 4px; margin-right: 0; }
+            .hero { padding: 8px 2px; height: auto; }
+            .hero-content { margin-left: 0; max-width: 100vw; }
+            .hero-content h1 { font-size: 14px; }
+            .hero-content p { font-size: 10px; }
+            .section { padding: 8px 2px 0 2px; }
+            .cards { gap: 4px; flex-direction: column; }
+        }
         .navbar {
             position: absolute;
             top: 0;
@@ -384,21 +408,6 @@
         .logout-btn:hover {
             background-color: #f8d7da;
             color: #721c24;
-        }
-        @media (max-width: 900px) {
-            .hero .content { left: 20px; padding: 18px 12px; border-radius: 14px; }
-            .hero .content h1 { font-size: 32px; }
-            .hero .content p { font-size: 15px; }
-            .navbar { padding: 24px 20px 0 20px; }
-            .section { padding: 40px 10px 0 10px; }
-            .cards { gap: 18px; }
-        }
-        @media (max-width: 700px) {
-            .hero { height: 320px; }
-            .hero .content h1 { font-size: 32px; }
-            .section h2 { font-size: 24px; }
-            .cards { flex-direction: column; }
-            .card { min-width: 0; max-width: 100%; }
         }
     </style>
     <!-- Font Awesome for social icons -->

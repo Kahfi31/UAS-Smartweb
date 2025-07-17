@@ -233,6 +233,29 @@
         .add-guide-btn:hover {
             background-color: #059669;
         }
+        @media (max-width: 1024px) {
+            main { padding: 1.2rem; }
+            .admin-header, .data-section, .stat-card { padding: 1rem; }
+        }
+        @media (max-width: 768px) {
+            header h1 { font-size: 1.3rem; }
+            .navbar { flex-direction: column; align-items: flex-start; padding: 0.5rem 0.5rem; }
+            .navbar div { width: 100%; display: flex; flex-direction: column; gap: 0.5rem; }
+            .navbar div a { margin-right: 0; font-size: 1rem; padding: 0.3rem 0; }
+            .login-button { width: 100%; margin-top: 0.5rem; padding: 0.5rem 0; font-size: 1rem; }
+            main { padding: 0.7rem; }
+            .admin-header, .data-section, .stat-card { padding: 0.5rem; }
+            .data-table th, .data-table td { padding: 0.5rem; font-size: 0.9rem; }
+        }
+        @media (max-width: 480px) {
+            header h1 { font-size: 1rem; }
+            .navbar { padding: 0.3rem 0.2rem; }
+            .navbar div a { font-size: 0.95rem; padding: 0.2rem 0; }
+            .login-button { font-size: 0.95rem; padding: 0.4rem 0; }
+            main { padding: 0.3rem; }
+            .admin-header, .data-section, .stat-card { padding: 0.2rem; }
+            .data-table th, .data-table td { padding: 0.2rem; font-size: 0.8rem; }
+        }
     </style>
 </head>
 <body>

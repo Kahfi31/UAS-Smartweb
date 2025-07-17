@@ -505,6 +505,45 @@
         transform: translateY(-2px);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     }
+
+    /* Tambahan Media Queries Responsif */
+    @media (max-width: 1024px) {
+        .chat-container { max-width: 98vw; height: 90vh; }
+        .modal-content { margin: 20% auto; max-width: 95vw; }
+    }
+    @media (max-width: 768px) {
+        .chat-container { max-width: 100vw; height: 100vh; border-radius: 0; box-shadow: none; }
+        .chat-header { padding: 0.75rem 1rem; border-radius: 0; }
+        .chat-messages { padding: 0.5rem; }
+        .chat-input { padding: 0.5rem; border-radius: 0 0 0 0; }
+        .modal-content { margin: 30% auto; padding: 1rem; max-width: 98vw; }
+        .add-friend-button { width: 48px; height: 48px; font-size: 1.2rem; bottom: 1rem; right: 1rem; }
+        .my-pin-section, .demo-actions { padding: 0.5rem; }
+        .friend-avatar { width: 32px; height: 32px; font-size: 1rem; }
+        .friend-item { padding: 0.5rem; }
+        .pin-display { font-size: 1rem; }
+        .form-group input, .search-friends input { padding: 0.5rem; font-size: 0.95rem; }
+        .submit-btn, .generate-pin-btn, .demo-btn { padding: 0.5rem; font-size: 0.95rem; }
+    }
+    @media (max-width: 480px) {
+        .chat-container { max-width: 100vw; height: 100vh; border-radius: 0; box-shadow: none; }
+        .chat-header { padding: 0.5rem 0.5rem; border-radius: 0; }
+        .chat-header .avatar { width: 32px; height: 32px; font-size: 1rem; }
+        .chat-header .info h3 { font-size: 1rem; }
+        .chat-header .info p { font-size: 0.8rem; }
+        .chat-messages { padding: 0.25rem; }
+        .message-content { padding: 0.5rem 0.75rem; font-size: 0.95rem; }
+        .chat-input { padding: 0.25rem; }
+        .chat-input input { padding: 0.5rem 0.75rem; font-size: 0.95rem; }
+        .send-button { width: 32px; height: 32px; font-size: 1rem; }
+        .add-friend-button { width: 40px; height: 40px; font-size: 1rem; bottom: 0.5rem; right: 0.5rem; }
+        .modal-content { margin: 40% auto; padding: 0.75rem; max-width: 99vw; }
+        .form-group input, .search-friends input { padding: 0.4rem; font-size: 0.9rem; }
+        .submit-btn, .generate-pin-btn, .demo-btn { padding: 0.4rem; font-size: 0.9rem; }
+        .friend-avatar { width: 28px; height: 28px; font-size: 0.95rem; }
+        .friend-item { padding: 0.35rem; }
+        .pin-display { font-size: 0.95rem; }
+    }
 </style>
 
 <div class="chat-container">

@@ -774,6 +774,37 @@ html {
     opacity: 0.7;
     border: none;
 }
+    /* Tambahan Media Queries Responsif */
+    @media (max-width: 1024px) {
+        .navbar-links { gap: 40px; margin-left: 40px; }
+        .hero-content { margin-left: 40px; max-width: 95vw; }
+        .hero h1 { font-size: 60px; }
+        .destinations h2::after { width: 90vw; }
+    }
+    @media (max-width: 768px) {
+        .navbar { flex-direction: column; align-items: flex-start; padding: 8px 4px; }
+        .navbar-links { flex-direction: column; gap: 12px; margin-left: 0; width: 100%; }
+        .navbar-links a { font-size: 16px; margin-top: 0; padding: 6px 0; }
+        .navbar-user { margin-top: 8px; margin-right: 0; }
+        .hero { padding: 24px 4px; height: auto; }
+        .hero-content { margin-left: 0; max-width: 100vw; }
+        .hero h1 { font-size: 36px; }
+        .hero p { font-size: 15px; }
+        .destinations { padding: 24px 4px; }
+        .destination-grid { gap: 10px; }
+    }
+    @media (max-width: 480px) {
+        .navbar { padding: 4px 2px; }
+        .navbar-links { gap: 6px; margin-left: 0; width: 100%; }
+        .navbar-links a { font-size: 14px; padding: 4px 0; }
+        .navbar-user { margin-top: 4px; margin-right: 0; }
+        .hero { padding: 8px 2px; height: auto; }
+        .hero-content { margin-left: 0; max-width: 100vw; }
+        .hero h1 { font-size: 20px; }
+        .hero p { font-size: 12px; }
+        .destinations { padding: 8px 2px; }
+        .destination-grid { gap: 4px; flex-direction: column; }
+    }
     </style>
 </head>
 <body>
