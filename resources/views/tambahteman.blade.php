@@ -829,9 +829,9 @@ document.addEventListener('DOMContentLoaded', function() {
         return messageDiv;
     }
 
-    // PIN input validation (only numbers, max 6 digits)
+    // PIN input validation (alphanumeric, max 6 karakter)
     document.getElementById('friendPin').addEventListener('input', function(e) {
-        this.value = this.value.replace(/[^0-9]/g, '').slice(0, 6);
+        this.value = this.value.replace(/[^a-zA-Z0-9]/g, '').slice(0, 6);
     });
 
     // Tab switching functionality
